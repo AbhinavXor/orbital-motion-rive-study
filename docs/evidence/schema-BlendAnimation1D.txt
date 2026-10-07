@@ -1,0 +1,12 @@
+BlendAnimation1D  (typeKey 75)
+extends BlendAnimation > ArtboardProvider
+
+own properties:
+  value                              double       key 166     = 0
+
+inherited from BlendAnimation:
+  animationId                        Id           key 165
+      Id of the animation this BlendAnimation references.
+
+2 properties.  A = animatable, B = bindable, D = derived (computed, not authored -- bind to it, do not set it).
+Editor-only properties are hidden; --all shows them.

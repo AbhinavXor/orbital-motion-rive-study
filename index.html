@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Interactive Rive motion study demonstrating scroll, pointer and click-driven animation with developer-ready handoff." />
+    <meta name="theme-color" content="#f1efe9" />
+    <title>Orbital Motion — Interactive Rive Case Study</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+</head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Motion Study home">
+        <span class="brand-index">01</span>
+        <span>Motion Study</span>
+      </a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#behavior">Behavior</a>
+        <a href="#implementation">Implementation</a>
+      </nav>
+      <div class="header-note">Interactive web animation / 2026</div>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="top" data-section="hero">
+        <div class="hero-copy">
+          <div class="hero-kicker">
+            <span>Web motion prototype</span>
+            <span>Rive-ready</span>
+          </div>
+          <h1>Motion that responds to <em>attention.</em></h1>
+          <p class="hero-lede">
+            A small interaction system built around three inputs: pointer, scroll and click. The artwork stays two-dimensional; depth comes from timing, perspective and layered movement.
+          </p>
+          <div class="hero-actions" aria-label="Demo controls">
+            <button class="primary-button" type="button" data-trigger="burst">Run click state</button>
+            <button class="secondary-button" type="button" data-trigger="focus" aria-pressed="false">Hold focus</button>
+          </div>
+          <dl class="hero-meta">
+            <div><dt>Input</dt><dd>Pointer / Scroll / Click</dd></div>
+            <div><dt>Output</dt><dd>Transform / Depth / State</dd></div>
+            <div><dt>Runtime</dt><dd>Browser / Rive-ready</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-stage-wrap">
+          <div class="stage-caption stage-caption-top">
+            <span>Live object</span>
+            <span id="interaction-status">idle</span>
+          </div>
+          <div class="motion-stage" id="motion-stage" tabindex="0" role="img" aria-label="Interactive layered object that reacts to pointer, scroll and click">
+            <div class="stage-grid" aria-hidden="true"></div>
+            <canvas
+              class="rive-canvas"
+              id="rive-canvas"
+              aria-hidden="true"
+            ></canvas>
+            <img
+              class="stage-art stage-art-fallback"
+              src="./assets/orbital-core.svg"
+              alt=""
+              decoding="async"
+            />
+            <div class="depth-layer depth-layer-a" aria-hidden="true"></div>
+            <div class="depth-layer depth-layer-b" aria-hidden="true"></div>
+            <div class="cursor-orbit" aria-hidden="true"></div>
+            <span class="axis axis-x" aria-hidden="true">X</span>
+            <span class="axis axis-y" aria-hidden="true">Y</span>
+          </div>
+          <div class="stage-caption stage-caption-bottom">
+            <span>Move pointer over object</span>
+            <span>Press Enter for click state</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="behavior section" id="behavior" data-section="system">
+        <div class="section-label">Behavior / 01—03</div>
+        <div class="behavior-intro">
+          <h2>Three states. One object.</h2>
+          <p>The same graphic is re-composed instead of swapping between pre-rendered scenes. That keeps the interaction continuous and easier to integrate into a live page.</p>
+        </div>
+
+        <div class="story-grid">
+          <article class="story-card" data-story-step="0">
+            <div class="story-index">01</div>
+            <div>
+              <h3>Assemble</h3>
+              <p>Layers settle into a readable starting composition as the section enters the viewport.</p>
+            </div>
+            <div class="story-rule" aria-hidden="true"></div>
+          </article>
+          <article class="story-card" data-story-step="1">
+            <div class="story-index">02</div>
+            <div>
+              <h3>Inspect</h3>
+              <p>Depth separates while pointer movement adds a small parallax response without moving the page itself.</p>
+            </div>
+            <div class="story-rule" aria-hidden="true"></div>
+          </article>
+          <article class="story-card" data-story-step="2">
+            <div class="story-index">03</div>
+            <div>
+              <h3>Transform</h3>
+              <p>Scroll progress changes scale, rotation and spacing so the graphic can support a product narrative.</p>
+            </div>
+            <div class="story-rule" aria-hidden="true"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="interaction-lab section" id="interactions" data-section="interactions">
+        <div class="section-label">Interaction tests</div>
+        <div class="interaction-grid">
+          <article class="tilt-card" data-tilt>
+            <span class="card-kicker">A / Hover</span>
+            <h3>Surface response</h3>
+            <p>A restrained perspective shift and local highlight make a flat panel feel physical.</p>
+            <div class="card-object object-ring" aria-hidden="true"></div>
+            <div class="card-light" aria-hidden="true"></div>
+          </article>
+          <article class="tilt-card" data-tilt>
+            <span class="card-kicker">B / Scroll</span>
+            <h3>Progress, not playback</h3>
+            <p>Animation is tied to scroll position, so the user controls the pace in both directions.</p>
+            <div class="card-object object-stack" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="card-light" aria-hidden="true"></div>
+          </article>
+          <article class="tilt-card" data-tilt>
+            <span class="card-kicker">C / Click</span>
+            <h3>Discrete state change</h3>
+            <p>Click maps to a trigger rather than a timeline, matching the way the behavior would be authored in Rive.</p>
+            <button class="mini-trigger" type="button" data-trigger="burst">Run trigger →</button>
+            <div class="card-light" aria-hidden="true"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="implementation section" id="implementation">
+        <div class="section-label">Implementation</div>
+        <div class="implementation-grid">
+          <div class="implementation-copy">
+            <h2>Small contract. Predictable handoff.</h2>
+            <p>The browser only needs to provide a few normalized inputs. The same contract can drive a Rive state machine, which keeps design and implementation responsibilities clear.</p>
+          </div>
+          <div class="state-table" role="table" aria-label="Rive input map">
+            <div class="state-row state-head" role="row"><span>Input</span><span>Type</span><span>Range / action</span></div>
+            <div class="state-row" role="row"><code>pointerX</code><span>Number</span><span>-1 → 1</span></div>
+            <div class="state-row" role="row"><code>pointerY</code><span>Number</span><span>-1 → 1</span></div>
+            <div class="state-row" role="row"><code>scroll</code><span>Number</span><span>0 → 1</span></div>
+            <div class="state-row" role="row"><code>focus</code><span>Boolean</span><span>on / off</span></div>
+            <div class="state-row" role="row"><code>burst</code><span>Trigger</span><span>fire</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="handoff section" id="handoff">
+        <div class="handoff-title">Delivery notes</div>
+        <div class="handoff-copy">
+          <p>Responsive behavior, reduced-motion handling, interaction mapping and QA notes are included with the project. The artwork is layered so it can be rebuilt as a native Rive asset without changing the web-facing interaction contract.</p>
+          <div class="handoff-tags" aria-label="Delivery items">
+            <span>Layered SVG source</span>
+            <span>State map</span>
+            <span>Responsive rules</span>
+            <span>QA checklist</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Motion Study 01</span>
+      <span>Scroll · Hover · Click</span>
+    </footer>
+
+    <div class="scroll-meter" aria-hidden="true"><span id="scroll-meter-fill"></span></div>
+    <script type="module" src="/src/app.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+Artboard  (typeKey 1)
+extends LayoutComponent > Drawable > Node > TransformComponent > WorldTransformComponent > ContainerComponent > Component > ArtboardProvider
+
+own properties:
+  originX                            double       key 11      = 0
+      Origin x in normalized coordinates (0.5 = center, 0 = left, 1 = right).
+  originY                            double       key 12      = 0
+      Origin y in normalized coordinates (0.5 = center, 0 = top, 1 = bottom).
+  defaultStateMachineId              Id           key 236
+      The default StateMachine attached to this artboard automatically when it is initialized.
+  viewModelId                        Id           key 583
+      The view model attached to this artboard data context.
+
+inherited from LayoutComponent:
+  clip                          AB   bool         key 196     = false
+      True when the layout component bounds clip its contents.
+  width                         AB   double       key 7       = 0
+      Initial width of the item.
+  height                        AB   double       key 8       = 0
+      Initial height of the item.
+  styleId                            Id           key 494
+      LayoutStyle that defines the styling for this LayoutComponent
+  fractionalWidth               AB   double       key 706     = 1
+      Initial fractional width of the item when using scaleType fill.
+  fractionalHeight              AB   double       key 707     = 1
+      Initial fractional height of the item when using scaleType fill.
+
+inherited from Drawable:
+  blendModeValue                     uint8        key 23      = srcOver
+      accepts: srcOver (3), additive (12), screen (14), overlay (15), darken (16), lighten (17), colorDodge (18), colorBurn (19), hardLight (20), softLight (21), difference (22), exclusion (23), multiply (24), hue (25), saturation (26), color (27), luminosity (28)
+  additiveAmount                AB   uint8        key 450     = 255
+      How much of the additive blend mode to mix in, 0-255. Only meaningful when blendModeValue is additive.
+  drawableFlags                      uint16       key 129     = 0
+
+inherited from Node:
+  x                             AB   double       key 13      = 0
+  y                             AB   double       key 14      = 0
+  computedLocalX                 BD  double       key 806     = 0
+  computedLocalY                 BD  double       key 807     = 0
+  computedWorldX                 BD  double       key 808     = 0
+  computedWorldY                 BD  double       key 809     = 0
+  computedRootX                  BD  double       key 864     = 0
+  computedRootY                  BD  double       key 865     = 0
+  computedWidth                  BD  double       key 810     = 0
+  computedHeight                 BD  double       key 811     = 0
+
+inherited from TransformComponent:
+  rotation                      AB   double       key 15      = 0
+  scaleX                        AB   double       key 16      = 1
+  scaleY                        AB   double       key 17      = 1
+
+inherited from WorldTransformComponent:
+  opacity                       AB   double       key 18      = 1
+
+inherited from Component:
+  name                               String       key 4
+      Non-unique identifier, used to give friendly names to elements in the hierarchy. Runtimes provide an API for finding components by this [name].
+  parentId                           Id           key 5
+      Identifier used to track parent ContainerComponent.
+  flags                              uint         key 130     = 0
+      Component state. Runtime export folds visibility and selectable state into drawable flags; editor-only flags stay in the editor.
+      bits (write each as its own attribute, e.g. hidden="true"): hidden locked disconnected opaque guide isolated visibleOverride unlockedOverride participatesInLayout complexDependency selectable
+
+30 properties.  A = animatable, B = bindable, D = derived (computed, not authored -- bind to it, do not set it).
+Editor-only properties are hidden; --all shows them.

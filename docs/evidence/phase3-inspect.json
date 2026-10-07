@@ -1,0 +1,2732 @@
+{
+  "schema": 1,
+  "problems": [],
+  "backboard": {
+    "type": "Backboard",
+    "line": 0
+  },
+  "defaultArtboard": {"id": "0:1", "name": "OrbitalCore"},
+  "artboards": [
+    {
+      "type": "Artboard",
+      "id": "0:1",
+      "line": 3,
+      "originX": 0,
+      "originY": 0,
+      "defaultStateMachineId": "0:100",
+      "clip": false,
+      "width": 900,
+      "height": 900,
+      "styleId": "0:2",
+      "fractionalWidth": 1,
+      "fractionalHeight": 1,
+      "blendModeValue": 3,
+      "additiveAmount": 255,
+      "drawableFlags": 0,
+      "x": 0,
+      "y": 0,
+      "computedLocalX": 0,
+      "computedLocalY": 0,
+      "computedWorldX": 0,
+      "computedWorldY": 0,
+      "computedRootX": 0,
+      "computedRootY": 0,
+      "computedWidth": 0,
+      "computedHeight": 0,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "opacity": 1,
+      "name": "OrbitalCore",
+      "enums": {"blendModeValue": "srcOver"},
+      "children": [
+        {
+          "type": "LayoutComponentStyle",
+          "id": "0:2",
+          "line": 11,
+          "gapHorizontal": 0,
+          "gapVertical": 0,
+          "borderLeft": 0,
+          "borderRight": 0,
+          "borderTop": 0,
+          "borderBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "marginBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "positionLeft": 0,
+          "positionRight": 0,
+          "positionTop": 0,
+          "positionBottom": 0,
+          "positionLeftUnitsValue": 0,
+          "positionRightUnitsValue": 0,
+          "positionTopUnitsValue": 0,
+          "positionBottomUnitsValue": 0,
+          "flexBasis": 0,
+          "aspectRatio": 0,
+          "interpolationTime": 0,
+          "flexBasisUnitsValue": 3,
+          "layoutAlignmentType": 0,
+          "animationStyleType": 0,
+          "interpolationType": 0,
+          "positionTypeValue": 1,
+          "flexDirectionValue": 2,
+          "directionValue": 0,
+          "flexWrapValue": 0,
+          "overflowValue": 0,
+          "intrinsicallySizedValue": false,
+          "borderLeftUnitsValue": 0,
+          "borderRightUnitsValue": 0,
+          "borderTopUnitsValue": 0,
+          "borderBottomUnitsValue": 0,
+          "marginLeftUnitsValue": 1,
+          "marginRightUnitsValue": 1,
+          "marginTopUnitsValue": 1,
+          "marginBottomUnitsValue": 1,
+          "paddingLeftUnitsValue": 1,
+          "paddingRightUnitsValue": 1,
+          "paddingTopUnitsValue": 1,
+          "paddingBottomUnitsValue": 1,
+          "gapHorizontalUnitsValue": 1,
+          "gapVerticalUnitsValue": 1,
+          "justifyItemsValue": 7,
+          "layoutTypeValue": 0,
+          "linkCornerRadius": true,
+          "cornerRadiusTL": 0,
+          "cornerRadiusTR": 0,
+          "cornerRadiusBL": 0,
+          "cornerRadiusBR": 0,
+          "minWidth": 0,
+          "maxWidth": 0,
+          "minHeight": 0,
+          "maxHeight": 0,
+          "minWidthUnitsValue": 0,
+          "maxWidthUnitsValue": 0,
+          "minHeightUnitsValue": 0,
+          "maxHeightUnitsValue": 0,
+          "layoutWidthScaleType": 0,
+          "layoutHeightScaleType": 0,
+          "hugUnbounded": false,
+          "widthUnitsValue": 1,
+          "heightUnitsValue": 1,
+          "justifySelfValue": 6,
+          "displayValue": 0,
+          "name": "ArtboardStyle",
+          "enums": {"positionLeftUnitsValue": "undefined", "positionRightUnitsValue": "undefined", "positionTopUnitsValue": "undefined", "positionBottomUnitsValue": "undefined", "flexBasisUnitsValue": "auto", "layoutAlignmentType": "topLeft", "animationStyleType": "none", "interpolationType": "hold", "positionTypeValue": "relative", "flexDirectionValue": "row", "directionValue": "inherit", "flexWrapValue": "noWrap", "overflowValue": "visible", "borderLeftUnitsValue": "undefined", "borderRightUnitsValue": "undefined", "borderTopUnitsValue": "undefined", "borderBottomUnitsValue": "undefined", "marginLeftUnitsValue": "points", "marginRightUnitsValue": "points", "marginTopUnitsValue": "points", "marginBottomUnitsValue": "points", "paddingLeftUnitsValue": "points", "paddingRightUnitsValue": "points", "paddingTopUnitsValue": "points", "paddingBottomUnitsValue": "points", "gapHorizontalUnitsValue": "points", "gapVerticalUnitsValue": "points", "justifyItemsValue": "stretch", "layoutTypeValue": "flex", "minWidthUnitsValue": "undefined", "maxWidthUnitsValue": "undefined", "minHeightUnitsValue": "undefined", "maxHeightUnitsValue": "undefined", "layoutWidthScaleType": "fixed", "layoutHeightScaleType": "fixed", "widthUnitsValue": "points", "heightUnitsValue": "points", "justifySelfValue": "auto", "displayValue": "flex"}
+        },
+        {
+          "type": "Fill",
+          "line": 18,
+          "fillRule": 0,
+          "isVisible": true,
+          "blendModeValue": 127,
+          "additiveAmount": 255,
+          "name": "Background",
+          "enums": {"fillRule": "nonZero", "blendModeValue": "inherit"},
+          "children": [
+            {
+              "type": "SolidColor",
+              "line": 19,
+              "colorValue": "FFF1EFE9",
+              "colorRed": 0,
+              "colorGreen": 0,
+              "colorBlue": 0,
+              "colorAlpha": 0,
+              "name": "BackgroundColor"
+            }
+          ]
+        },
+        {
+          "type": "Shape",
+          "id": "0:10",
+          "line": 30,
+          "length": 0,
+          "blendModeValue": 3,
+          "additiveAmount": 255,
+          "drawableFlags": 0,
+          "x": 450,
+          "y": 450,
+          "computedLocalX": 0,
+          "computedLocalY": 0,
+          "computedWorldX": 0,
+          "computedWorldY": 0,
+          "computedRootX": 0,
+          "computedRootY": 0,
+          "computedWidth": 0,
+          "computedHeight": 0,
+          "rotation": -0.349999994,
+          "scaleX": 1,
+          "scaleY": 1,
+          "opacity": 1,
+          "name": "RearShardA",
+          "enums": {"blendModeValue": "srcOver"},
+          "children": [
+            {
+              "type": "Triangle",
+              "line": 37,
+              "width": 490,
+              "height": 470,
+              "originX": 0.5,
+              "originY": 0.5,
+              "pathFlags": 0,
+              "isHole": false,
+              "x": 0,
+              "y": 0,
+              "computedLocalX": 0,
+              "computedLocalY": 0,
+              "computedWorldX": 0,
+              "computedWorldY": 0,
+              "computedRootX": 0,
+              "computedRootY": 0,
+              "computedWidth": 0,
+              "computedHeight": 0,
+              "rotation": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "opacity": 1,
+              "name": "RearPathA"
+            },
+            {
+              "type": "Fill",
+              "line": 45,
+              "fillRule": 0,
+              "isVisible": true,
+              "blendModeValue": 127,
+              "additiveAmount": 255,
+              "name": "RearFillA",
+              "enums": {"fillRule": "nonZero", "blendModeValue": "inherit"},
+              "children": [
+                {
+                  "type": "SolidColor",
+                  "line": 46,
+                  "colorValue": "FFCAC7BD",
+                  "colorRed": 0,
+                  "colorGreen": 0,
+                  "colorBlue": 0,
+                  "colorAlpha": 0,
+                  "name": "RearColorA"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Shape",
+          "id": "0:11",
+          "line": 54,
+          "length": 0,
+          "blendModeValue": 3,
+          "additiveAmount": 255,
+          "drawableFlags": 0,
+          "x": 450,
+          "y": 450,
+          "computedLocalX": 0,
+          "computedLocalY": 0,
+          "computedWorldX": 0,
+          "computedWorldY": 0,
+          "computedRootX": 0,
+          "computedRootY": 0,
+          "computedWidth": 0,
+          "computedHeight": 0,
+          "rotation": 0.550000012,
+          "scaleX": 1,
+          "scaleY": 1,
+          "opacity": 1,
+          "name": "RearShardB",
+          "enums": {"blendModeValue": "srcOver"},
+          "children": [
+            {
+              "type": "Triangle",
+              "line": 61,
+              "width": 430,
+              "height": 430,
+              "originX": 0.5,
+              "originY": 0.5,
+              "pathFlags": 0,
+              "isHole": false,
+              "x": 0,
+              "y": 0,
+              "computedLocalX": 0,
+              "computedLocalY": 0,
+              "computedWorldX": 0,
+              "computedWorldY": 0,
+              "computedRootX": 0,
+              "computedRootY": 0,
+              "computedWidth": 0,
+              "computedHeight": 0,
+              "rotation": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "opacity": 1,
+              "name": "RearPathB"
+            },
+            {
+              "type": "Fill",
+              "line": 69,
+              "fillRule": 0,
+              "isVisible": true,
+              "blendModeValue": 127,
+              "additiveAmount": 255,
+              "name": "RearFillB",
+              "enums": {"fillRule": "nonZero", "blendModeValue": "inherit"},
+              "children": [
+                {
+                  "type": "SolidColor",
+                  "line": 70,
+                  "colorValue": "FF232323",
+                  "colorRed": 0,
+                  "colorGreen": 0,
+                  "colorBlue": 0,
+                  "colorAlpha": 0,
+                  "name": "RearColorB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Shape",
+          "id": "0:12",
+          "line": 82,
+          "length": 0,
+          "blendModeValue": 3,
+          "additiveAmount": 255,
+          "drawableFlags": 0,
+          "x": 450,
+          "y": 450,
+          "computedLocalX": 0,
+          "computedLocalY": 0,
+          "computedWorldX": 0,
+          "computedWorldY": 0,
+          "computedRootX": 0,
+          "computedRootY": 0,
+          "computedWidth": 0,
+          "computedHeight": 0,
+          "rotation": -0.0500000007,
+          "scaleX": 1,
+          "scaleY": 1,
+          "opacity": 1,
+          "name": "MiddleShard",
+          "enums": {"blendModeValue": "srcOver"},
+          "children": [
+            {
+              "type": "Triangle",
+              "line": 89,
+              "width": 335,
+              "height": 350,
+              "originX": 0.5,
+              "originY": 0.5,
+              "pathFlags": 0,
+              "isHole": false,
+              "x": 0,
+              "y": 0,
+              "computedLocalX": 0,
+              "computedLocalY": 0,
+              "computedWorldX": 0,
+              "computedWorldY": 0,
+              "computedRootX": 0,
+              "computedRootY": 0,
+              "computedWidth": 0,
+              "computedHeight": 0,
+              "rotation": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "opacity": 1,
+              "name": "MiddlePath"
+            },
+            {
+              "type": "Fill",
+              "line": 97,
+              "fillRule": 0,
+              "isVisible": true,
+              "blendModeValue": 127,
+              "additiveAmount": 255,
+              "name": "MiddleFill",
+              "enums": {"fillRule": "nonZero", "blendModeValue": "inherit"},
+              "children": [
+                {
+                  "type": "SolidColor",
+                  "line": 98,
+                  "colorValue": "FF3563E9",
+                  "colorRed": 0,
+                  "colorGreen": 0,
+                  "colorBlue": 0,
+                  "colorAlpha": 0,
+                  "name": "MiddleColor"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Shape",
+          "id": "0:13",
+          "line": 110,
+          "length": 0,
+          "blendModeValue": 3,
+          "additiveAmount": 255,
+          "drawableFlags": 0,
+          "x": 450,
+          "y": 450,
+          "computedLocalX": 0,
+          "computedLocalY": 0,
+          "computedWorldX": 0,
+          "computedWorldY": 0,
+          "computedRootX": 0,
+          "computedRootY": 0,
+          "computedWidth": 0,
+          "computedHeight": 0,
+          "rotation": 0.349999994,
+          "scaleX": 1,
+          "scaleY": 1,
+          "opacity": 1,
+          "name": "FrontShard",
+          "enums": {"blendModeValue": "srcOver"},
+          "children": [
+            {
+              "type": "Triangle",
+              "line": 117,
+              "width": 230,
+              "height": 245,
+              "originX": 0.5,
+              "originY": 0.5,
+              "pathFlags": 0,
+              "isHole": false,
+              "x": 0,
+              "y": 0,
+              "computedLocalX": 0,
+              "computedLocalY": 0,
+              "computedWorldX": 0,
+              "computedWorldY": 0,
+              "computedRootX": 0,
+              "computedRootY": 0,
+              "computedWidth": 0,
+              "computedHeight": 0,
+              "rotation": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "opacity": 1,
+              "name": "FrontPath"
+            },
+            {
+              "type": "Fill",
+              "line": 125,
+              "fillRule": 0,
+              "isVisible": true,
+              "blendModeValue": 127,
+              "additiveAmount": 255,
+              "name": "FrontFill",
+              "enums": {"fillRule": "nonZero", "blendModeValue": "inherit"},
+              "children": [
+                {
+                  "type": "SolidColor",
+                  "line": 126,
+                  "colorValue": "FFF0AA38",
+                  "colorRed": 0,
+                  "colorGreen": 0,
+                  "colorBlue": 0,
+                  "colorAlpha": 0,
+                  "name": "FrontColor"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Shape",
+          "id": "0:14",
+          "line": 138,
+          "length": 0,
+          "blendModeValue": 3,
+          "additiveAmount": 255,
+          "drawableFlags": 0,
+          "x": 450,
+          "y": 450,
+          "computedLocalX": 0,
+          "computedLocalY": 0,
+          "computedWorldX": 0,
+          "computedWorldY": 0,
+          "computedRootX": 0,
+          "computedRootY": 0,
+          "computedWidth": 0,
+          "computedHeight": 0,
+          "rotation": -0.519999981,
+          "scaleX": 1,
+          "scaleY": 1,
+          "opacity": 1,
+          "name": "Core",
+          "enums": {"blendModeValue": "srcOver"},
+          "children": [
+            {
+              "type": "Triangle",
+              "line": 145,
+              "width": 120,
+              "height": 128,
+              "originX": 0.5,
+              "originY": 0.5,
+              "pathFlags": 0,
+              "isHole": false,
+              "x": 0,
+              "y": 0,
+              "computedLocalX": 0,
+              "computedLocalY": 0,
+              "computedWorldX": 0,
+              "computedWorldY": 0,
+              "computedRootX": 0,
+              "computedRootY": 0,
+              "computedWidth": 0,
+              "computedHeight": 0,
+              "rotation": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "opacity": 1,
+              "name": "CorePath"
+            },
+            {
+              "type": "Fill",
+              "line": 153,
+              "fillRule": 0,
+              "isVisible": true,
+              "blendModeValue": 127,
+              "additiveAmount": 255,
+              "name": "CoreFill",
+              "enums": {"fillRule": "nonZero", "blendModeValue": "inherit"},
+              "children": [
+                {
+                  "type": "SolidColor",
+                  "line": 154,
+                  "colorValue": "FFF6F4ED",
+                  "colorRed": 0,
+                  "colorGreen": 0,
+                  "colorBlue": 0,
+                  "colorAlpha": 0,
+                  "name": "CoreColor"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "StateMachine",
+          "id": "0:100",
+          "line": 167,
+          "name": "Main",
+          "children": [
+            {
+              "type": "StateMachineNumber",
+              "id": "0:101",
+              "line": 172,
+              "value": 0,
+              "name": "pointerX"
+            },
+            {
+              "type": "StateMachineNumber",
+              "id": "0:102",
+              "line": 178,
+              "value": 0,
+              "name": "pointerY"
+            },
+            {
+              "type": "StateMachineNumber",
+              "id": "0:103",
+              "line": 184,
+              "value": 0,
+              "name": "scroll"
+            },
+            {
+              "type": "StateMachineBool",
+              "id": "0:104",
+              "line": 190,
+              "value": false,
+              "name": "focus"
+            },
+            {
+              "type": "StateMachineTrigger",
+              "id": "0:105",
+              "line": 196,
+              "name": "burst"
+            },
+            {
+              "type": "StateMachineBool",
+              "id": "0:106",
+              "line": 201,
+              "value": false,
+              "name": "reducedMotion"
+            },
+            {
+              "type": "StateMachineLayer",
+              "id": "0:120",
+              "line": 215,
+              "name": "Pointer X",
+              "children": [
+                {
+                  "type": "AnyState",
+                  "line": 220,
+                  "flags": 0
+                },
+                {
+                  "type": "ExitState",
+                  "line": 225,
+                  "flags": 0
+                },
+                {
+                  "type": "EntryState",
+                  "line": 230,
+                  "flags": 0,
+                  "children": [
+                    {
+                      "type": "StateTransition",
+                      "line": 234,
+                      "stateToId": "0:121",
+                      "flags": 0,
+                      "duration": 0,
+                      "exitTime": 0,
+                      "interpolationType": 1,
+                      "randomWeight": 1,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "BlendState1DInput",
+                  "id": "0:121",
+                  "line": 239,
+                  "inputId": "0:101",
+                  "flags": 0,
+                  "children": [
+                    {
+                      "type": "BlendAnimation1D",
+                      "line": 246,
+                      "value": -1,
+                      "animationId": "0:210"
+                    },
+                    {
+                      "type": "BlendAnimation1D",
+                      "line": 251,
+                      "value": 0,
+                      "animationId": "0:211"
+                    },
+                    {
+                      "type": "BlendAnimation1D",
+                      "line": 256,
+                      "value": 1,
+                      "animationId": "0:212"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "StateMachineLayer",
+              "id": "0:130",
+              "line": 270,
+              "name": "Pointer Y",
+              "children": [
+                {
+                  "type": "AnyState",
+                  "line": 275,
+                  "flags": 0
+                },
+                {
+                  "type": "ExitState",
+                  "line": 280,
+                  "flags": 0
+                },
+                {
+                  "type": "EntryState",
+                  "line": 285,
+                  "flags": 0,
+                  "children": [
+                    {
+                      "type": "StateTransition",
+                      "line": 289,
+                      "stateToId": "0:131",
+                      "flags": 0,
+                      "duration": 0,
+                      "exitTime": 0,
+                      "interpolationType": 1,
+                      "randomWeight": 1,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "BlendState1DInput",
+                  "id": "0:131",
+                  "line": 294,
+                  "inputId": "0:102",
+                  "flags": 0,
+                  "children": [
+                    {
+                      "type": "BlendAnimation1D",
+                      "line": 301,
+                      "value": -1,
+                      "animationId": "0:220"
+                    },
+                    {
+                      "type": "BlendAnimation1D",
+                      "line": 306,
+                      "value": 0,
+                      "animationId": "0:221"
+                    },
+                    {
+                      "type": "BlendAnimation1D",
+                      "line": 311,
+                      "value": 1,
+                      "animationId": "0:222"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "StateMachineLayer",
+              "id": "0:140",
+              "line": 328,
+              "name": "Scroll",
+              "children": [
+                {
+                  "type": "AnyState",
+                  "line": 333,
+                  "flags": 0
+                },
+                {
+                  "type": "ExitState",
+                  "line": 338,
+                  "flags": 0
+                },
+                {
+                  "type": "EntryState",
+                  "line": 343,
+                  "flags": 0,
+                  "children": [
+                    {
+                      "type": "StateTransition",
+                      "line": 347,
+                      "stateToId": "0:141",
+                      "flags": 0,
+                      "duration": 0,
+                      "exitTime": 0,
+                      "interpolationType": 1,
+                      "randomWeight": 1,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "BlendState1DInput",
+                  "id": "0:141",
+                  "line": 352,
+                  "inputId": "0:103",
+                  "flags": 0,
+                  "children": [
+                    {
+                      "type": "BlendAnimation1D",
+                      "line": 359,
+                      "value": 0,
+                      "animationId": "0:230"
+                    },
+                    {
+                      "type": "BlendAnimation1D",
+                      "line": 364,
+                      "value": 0.5,
+                      "animationId": "0:231"
+                    },
+                    {
+                      "type": "BlendAnimation1D",
+                      "line": 369,
+                      "value": 1,
+                      "animationId": "0:232"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "LinearAnimation",
+          "id": "0:200",
+          "line": 387,
+          "fps": 60,
+          "duration": 360,
+          "speed": 1,
+          "loopValue": 1,
+          "workStart": 4294967295,
+          "workEnd": 4294967295,
+          "enableWorkArea": false,
+          "quantize": false,
+          "name": "Idle",
+          "enums": {"loopValue": "loop"},
+          "children": [
+            {
+              "type": "KeyedObject",
+              "line": 395,
+              "objectId": "0:10",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 396,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 397,
+                      "value": -0.349999994,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    },
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 401,
+                      "value": 0.100000001,
+                      "interpolationType": 1,
+                      "frame": 180,
+                      "enums": {"interpolationType": "linear"}
+                    },
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 406,
+                      "value": -0.349999994,
+                      "interpolationType": 1,
+                      "frame": 360,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 415,
+              "objectId": "0:11",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 416,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 417,
+                      "value": 0.550000012,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    },
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 421,
+                      "value": 0.100000001,
+                      "interpolationType": 1,
+                      "frame": 180,
+                      "enums": {"interpolationType": "linear"}
+                    },
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 426,
+                      "value": 0.550000012,
+                      "interpolationType": 1,
+                      "frame": 360,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 435,
+              "objectId": "0:13",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 436,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 437,
+                      "value": 0.349999994,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    },
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 441,
+                      "value": 0.620000005,
+                      "interpolationType": 1,
+                      "frame": 180,
+                      "enums": {"interpolationType": "linear"}
+                    },
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 446,
+                      "value": 0.349999994,
+                      "interpolationType": 1,
+                      "frame": 360,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "LinearAnimation",
+          "id": "0:201",
+          "line": 462,
+          "fps": 60,
+          "duration": 48,
+          "speed": 1,
+          "loopValue": 0,
+          "workStart": 4294967295,
+          "workEnd": 4294967295,
+          "enableWorkArea": false,
+          "quantize": false,
+          "name": "Burst",
+          "enums": {"loopValue": "oneShot"},
+          "children": [
+            {
+              "type": "KeyedObject",
+              "line": 470,
+              "objectId": "0:10",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 471,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 473,
+                      "value": -0.349999994,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    },
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 478,
+                      "value": -1.20000005,
+                      "interpolationType": 1,
+                      "frame": 14,
+                      "enums": {"interpolationType": "linear"}
+                    },
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 484,
+                      "value": 0.159999996,
+                      "interpolationType": 1,
+                      "frame": 30,
+                      "enums": {"interpolationType": "linear"}
+                    },
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 490,
+                      "value": -0.349999994,
+                      "interpolationType": 1,
+                      "frame": 48,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 500,
+              "objectId": "0:11",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 501,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 503,
+                      "value": 0.550000012,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    },
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 508,
+                      "value": 1.54999995,
+                      "interpolationType": 1,
+                      "frame": 14,
+                      "enums": {"interpolationType": "linear"}
+                    },
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 514,
+                      "value": 0.200000003,
+                      "interpolationType": 1,
+                      "frame": 30,
+                      "enums": {"interpolationType": "linear"}
+                    },
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 520,
+                      "value": 0.550000012,
+                      "interpolationType": 1,
+                      "frame": 48,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 530,
+              "objectId": "0:12",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 531,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 533,
+                      "value": -0.0500000007,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    },
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 538,
+                      "value": 0.649999976,
+                      "interpolationType": 1,
+                      "frame": 13,
+                      "enums": {"interpolationType": "linear"}
+                    },
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 544,
+                      "value": -0.300000012,
+                      "interpolationType": 1,
+                      "frame": 29,
+                      "enums": {"interpolationType": "linear"}
+                    },
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 550,
+                      "value": -0.0500000007,
+                      "interpolationType": 1,
+                      "frame": 48,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "LinearAnimation",
+          "id": "0:202",
+          "line": 567,
+          "fps": 60,
+          "duration": 36,
+          "speed": 1,
+          "loopValue": 0,
+          "workStart": 4294967295,
+          "workEnd": 4294967295,
+          "enableWorkArea": false,
+          "quantize": false,
+          "name": "Focus",
+          "enums": {"loopValue": "oneShot"},
+          "children": [
+            {
+              "type": "KeyedObject",
+              "line": 575,
+              "objectId": "0:12",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 576,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 578,
+                      "value": -0.0500000007,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    },
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 583,
+                      "value": 0.25,
+                      "interpolationType": 1,
+                      "frame": 20,
+                      "enums": {"interpolationType": "linear"}
+                    },
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 589,
+                      "value": 0.119999997,
+                      "interpolationType": 1,
+                      "frame": 36,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 599,
+              "objectId": "0:13",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 600,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 602,
+                      "value": 0.349999994,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    },
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 607,
+                      "value": -0.150000006,
+                      "interpolationType": 1,
+                      "frame": 20,
+                      "enums": {"interpolationType": "linear"}
+                    },
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 613,
+                      "value": 0.0799999982,
+                      "interpolationType": 1,
+                      "frame": 36,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "LinearAnimation",
+          "id": "0:210",
+          "line": 629,
+          "fps": 60,
+          "duration": 1,
+          "speed": 1,
+          "loopValue": 0,
+          "workStart": 4294967295,
+          "workEnd": 4294967295,
+          "enableWorkArea": false,
+          "quantize": false,
+          "name": "PointerXLeft",
+          "enums": {"loopValue": "oneShot"},
+          "children": [
+            {
+              "type": "KeyedObject",
+              "line": 637,
+              "objectId": "0:10",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 639,
+                  "propertyKey": 13,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 640,
+                      "value": 462,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 648,
+              "objectId": "0:11",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 650,
+                  "propertyKey": 13,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 651,
+                      "value": 458,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 659,
+              "objectId": "0:12",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 661,
+                  "propertyKey": 13,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 662,
+                      "value": 444,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 670,
+              "objectId": "0:13",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 672,
+                  "propertyKey": 13,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 673,
+                      "value": 430,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 681,
+              "objectId": "0:14",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 683,
+                  "propertyKey": 13,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 684,
+                      "value": 438,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "LinearAnimation",
+          "id": "0:211",
+          "line": 694,
+          "fps": 60,
+          "duration": 1,
+          "speed": 1,
+          "loopValue": 0,
+          "workStart": 4294967295,
+          "workEnd": 4294967295,
+          "enableWorkArea": false,
+          "quantize": false,
+          "name": "PointerXCenter",
+          "enums": {"loopValue": "oneShot"},
+          "children": [
+            {
+              "type": "KeyedObject",
+              "line": 702,
+              "objectId": "0:10",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 704,
+                  "propertyKey": 13,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 705,
+                      "value": 450,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 713,
+              "objectId": "0:11",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 715,
+                  "propertyKey": 13,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 716,
+                      "value": 450,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 724,
+              "objectId": "0:12",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 726,
+                  "propertyKey": 13,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 727,
+                      "value": 450,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 735,
+              "objectId": "0:13",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 737,
+                  "propertyKey": 13,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 738,
+                      "value": 450,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 746,
+              "objectId": "0:14",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 748,
+                  "propertyKey": 13,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 749,
+                      "value": 450,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "LinearAnimation",
+          "id": "0:212",
+          "line": 759,
+          "fps": 60,
+          "duration": 1,
+          "speed": 1,
+          "loopValue": 0,
+          "workStart": 4294967295,
+          "workEnd": 4294967295,
+          "enableWorkArea": false,
+          "quantize": false,
+          "name": "PointerXRight",
+          "enums": {"loopValue": "oneShot"},
+          "children": [
+            {
+              "type": "KeyedObject",
+              "line": 767,
+              "objectId": "0:10",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 769,
+                  "propertyKey": 13,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 770,
+                      "value": 438,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 778,
+              "objectId": "0:11",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 780,
+                  "propertyKey": 13,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 781,
+                      "value": 442,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 789,
+              "objectId": "0:12",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 791,
+                  "propertyKey": 13,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 792,
+                      "value": 456,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 800,
+              "objectId": "0:13",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 802,
+                  "propertyKey": 13,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 803,
+                      "value": 470,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 811,
+              "objectId": "0:14",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 813,
+                  "propertyKey": 13,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 814,
+                      "value": 462,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "LinearAnimation",
+          "id": "0:220",
+          "line": 824,
+          "fps": 60,
+          "duration": 1,
+          "speed": 1,
+          "loopValue": 0,
+          "workStart": 4294967295,
+          "workEnd": 4294967295,
+          "enableWorkArea": false,
+          "quantize": false,
+          "name": "PointerYUp",
+          "enums": {"loopValue": "oneShot"},
+          "children": [
+            {
+              "type": "KeyedObject",
+              "line": 832,
+              "objectId": "0:10",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 834,
+                  "propertyKey": 14,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 835,
+                      "value": 458,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 843,
+              "objectId": "0:11",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 845,
+                  "propertyKey": 14,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 846,
+                      "value": 456,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 854,
+              "objectId": "0:12",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 856,
+                  "propertyKey": 14,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 857,
+                      "value": 445,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 865,
+              "objectId": "0:13",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 867,
+                  "propertyKey": 14,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 868,
+                      "value": 432,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 876,
+              "objectId": "0:14",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 878,
+                  "propertyKey": 14,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 879,
+                      "value": 440,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "LinearAnimation",
+          "id": "0:221",
+          "line": 889,
+          "fps": 60,
+          "duration": 1,
+          "speed": 1,
+          "loopValue": 0,
+          "workStart": 4294967295,
+          "workEnd": 4294967295,
+          "enableWorkArea": false,
+          "quantize": false,
+          "name": "PointerYCenter",
+          "enums": {"loopValue": "oneShot"},
+          "children": [
+            {
+              "type": "KeyedObject",
+              "line": 897,
+              "objectId": "0:10",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 899,
+                  "propertyKey": 14,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 900,
+                      "value": 450,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 908,
+              "objectId": "0:11",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 910,
+                  "propertyKey": 14,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 911,
+                      "value": 450,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 919,
+              "objectId": "0:12",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 921,
+                  "propertyKey": 14,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 922,
+                      "value": 450,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 930,
+              "objectId": "0:13",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 932,
+                  "propertyKey": 14,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 933,
+                      "value": 450,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 941,
+              "objectId": "0:14",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 943,
+                  "propertyKey": 14,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 944,
+                      "value": 450,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "LinearAnimation",
+          "id": "0:222",
+          "line": 954,
+          "fps": 60,
+          "duration": 1,
+          "speed": 1,
+          "loopValue": 0,
+          "workStart": 4294967295,
+          "workEnd": 4294967295,
+          "enableWorkArea": false,
+          "quantize": false,
+          "name": "PointerYDown",
+          "enums": {"loopValue": "oneShot"},
+          "children": [
+            {
+              "type": "KeyedObject",
+              "line": 962,
+              "objectId": "0:10",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 964,
+                  "propertyKey": 14,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 965,
+                      "value": 442,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 973,
+              "objectId": "0:11",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 975,
+                  "propertyKey": 14,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 976,
+                      "value": 444,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 984,
+              "objectId": "0:12",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 986,
+                  "propertyKey": 14,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 987,
+                      "value": 455,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 995,
+              "objectId": "0:13",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 997,
+                  "propertyKey": 14,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 998,
+                      "value": 468,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 1006,
+              "objectId": "0:14",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 1008,
+                  "propertyKey": 14,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1009,
+                      "value": 460,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "LinearAnimation",
+          "id": "0:230",
+          "line": 1019,
+          "fps": 60,
+          "duration": 1,
+          "speed": 1,
+          "loopValue": 0,
+          "workStart": 4294967295,
+          "workEnd": 4294967295,
+          "enableWorkArea": false,
+          "quantize": false,
+          "name": "ScrollStart",
+          "enums": {"loopValue": "oneShot"},
+          "children": [
+            {
+              "type": "KeyedObject",
+              "line": 1027,
+              "objectId": "0:10",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 1029,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1030,
+                      "value": -0.349999994,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1036,
+                  "propertyKey": 16,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1037,
+                      "value": 1,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1043,
+                  "propertyKey": 17,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1044,
+                      "value": 1,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 1052,
+              "objectId": "0:11",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 1054,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1055,
+                      "value": 0.550000012,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1061,
+                  "propertyKey": 16,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1062,
+                      "value": 1,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1068,
+                  "propertyKey": 17,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1069,
+                      "value": 1,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 1077,
+              "objectId": "0:12",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 1079,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1080,
+                      "value": -0.0500000007,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1086,
+                  "propertyKey": 16,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1087,
+                      "value": 1,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1093,
+                  "propertyKey": 17,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1094,
+                      "value": 1,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 1102,
+              "objectId": "0:13",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 1104,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1105,
+                      "value": 0.349999994,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1111,
+                  "propertyKey": 16,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1112,
+                      "value": 1,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1118,
+                  "propertyKey": 17,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1119,
+                      "value": 1,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 1127,
+              "objectId": "0:14",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 1129,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1130,
+                      "value": -0.519999981,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1136,
+                  "propertyKey": 16,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1137,
+                      "value": 1,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1143,
+                  "propertyKey": 17,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1144,
+                      "value": 1,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "LinearAnimation",
+          "id": "0:231",
+          "line": 1154,
+          "fps": 60,
+          "duration": 1,
+          "speed": 1,
+          "loopValue": 0,
+          "workStart": 4294967295,
+          "workEnd": 4294967295,
+          "enableWorkArea": false,
+          "quantize": false,
+          "name": "ScrollMiddle",
+          "enums": {"loopValue": "oneShot"},
+          "children": [
+            {
+              "type": "KeyedObject",
+              "line": 1162,
+              "objectId": "0:10",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 1164,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1165,
+                      "value": -1.04999995,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1171,
+                  "propertyKey": 16,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1172,
+                      "value": 1.05999994,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1178,
+                  "propertyKey": 17,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1179,
+                      "value": 1.05999994,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 1187,
+              "objectId": "0:11",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 1189,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1190,
+                      "value": 1.25,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1196,
+                  "propertyKey": 16,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1197,
+                      "value": 1.03999996,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1203,
+                  "propertyKey": 17,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1204,
+                      "value": 1.03999996,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 1212,
+              "objectId": "0:12",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 1214,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1215,
+                      "value": -0.419999987,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1221,
+                  "propertyKey": 16,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1222,
+                      "value": 1.08000004,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1228,
+                  "propertyKey": 17,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1229,
+                      "value": 1.08000004,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 1237,
+              "objectId": "0:13",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 1239,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1240,
+                      "value": 0.959999979,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1246,
+                  "propertyKey": 16,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1247,
+                      "value": 1.12,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1253,
+                  "propertyKey": 17,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1254,
+                      "value": 1.12,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 1262,
+              "objectId": "0:14",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 1264,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1265,
+                      "value": -1.20000005,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1271,
+                  "propertyKey": 16,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1272,
+                      "value": 0.920000017,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1278,
+                  "propertyKey": 17,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1279,
+                      "value": 0.920000017,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "LinearAnimation",
+          "id": "0:232",
+          "line": 1289,
+          "fps": 60,
+          "duration": 1,
+          "speed": 1,
+          "loopValue": 0,
+          "workStart": 4294967295,
+          "workEnd": 4294967295,
+          "enableWorkArea": false,
+          "quantize": false,
+          "name": "ScrollEnd",
+          "enums": {"loopValue": "oneShot"},
+          "children": [
+            {
+              "type": "KeyedObject",
+              "line": 1297,
+              "objectId": "0:10",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 1299,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1300,
+                      "value": -0.349999994,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1306,
+                  "propertyKey": 16,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1307,
+                      "value": 1,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1313,
+                  "propertyKey": 17,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1314,
+                      "value": 1,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 1322,
+              "objectId": "0:11",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 1324,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1325,
+                      "value": 0.550000012,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1331,
+                  "propertyKey": 16,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1332,
+                      "value": 1,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1338,
+                  "propertyKey": 17,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1339,
+                      "value": 1,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 1347,
+              "objectId": "0:12",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 1349,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1350,
+                      "value": -0.0500000007,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1356,
+                  "propertyKey": 16,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1357,
+                      "value": 1,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1363,
+                  "propertyKey": 17,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1364,
+                      "value": 1,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 1372,
+              "objectId": "0:13",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 1374,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1375,
+                      "value": 0.349999994,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1381,
+                  "propertyKey": 16,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1382,
+                      "value": 1,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1388,
+                  "propertyKey": 17,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1389,
+                      "value": 1,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "KeyedObject",
+              "line": 1397,
+              "objectId": "0:14",
+              "children": [
+                {
+                  "type": "KeyedProperty",
+                  "line": 1399,
+                  "propertyKey": 15,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1400,
+                      "value": -0.519999981,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1406,
+                  "propertyKey": 16,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1407,
+                      "value": 1,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                },
+                {
+                  "type": "KeyedProperty",
+                  "line": 1413,
+                  "propertyKey": 17,
+                  "children": [
+                    {
+                      "type": "KeyFrameDouble",
+                      "line": 1414,
+                      "value": 1,
+                      "interpolationType": 1,
+                      "frame": 0,
+                      "enums": {"interpolationType": "linear"}
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roots": [
+    {
+      "type": "Backboard",
+      "line": 0
+    }
+  ]
+}

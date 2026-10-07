@@ -1,0 +1,168 @@
+LayoutComponentStyle  (typeKey 420)
+extends LayoutSizingStyle > Component > ArtboardProvider
+
+own properties:
+  gapHorizontal                 AB   double       key 498     = 0
+      Horizontal gap between children in layout component
+  gapVertical                   AB   double       key 499     = 0
+      Vertical gap between children in layout component
+  borderLeft                    AB   double       key 504     = 0
+      Left border value.
+  borderRight                   AB   double       key 505     = 0
+      Right border value.
+  borderTop                     AB   double       key 506     = 0
+      Top border value.
+  borderBottom                  AB   double       key 507     = 0
+      Bottom border value.
+  marginLeft                    AB   double       key 508     = 0
+      Left margin value.
+  marginRight                   AB   double       key 509     = 0
+      Right margin value.
+  marginTop                     AB   double       key 510     = 0
+      Top margin value.
+  marginBottom                  AB   double       key 511     = 0
+      Bottom margin value.
+  paddingLeft                   AB   double       key 512     = 0
+      Left padding value.
+  paddingRight                  AB   double       key 513     = 0
+      Right padding value.
+  paddingTop                    AB   double       key 514     = 0
+      Top padding value.
+  paddingBottom                 AB   double       key 515     = 0
+      Bottom padding value.
+  positionLeft                  AB   double       key 516     = 0
+      Left position value.
+  positionRight                 AB   double       key 517     = 0
+      Right position value.
+  positionTop                   AB   double       key 518     = 0
+      Top position value.
+  positionBottom                AB   double       key 519     = 0
+      Bottom position value.
+  positionLeftUnitsValue         B   uint8        key 621     = undefined
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  positionRightUnitsValue        B   uint8        key 622     = undefined
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  positionTopUnitsValue          B   uint8        key 623     = undefined
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  positionBottomUnitsValue       B   uint8        key 624     = undefined
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  flexBasis                     AB   double       key 523     = 0
+      Flex basis value.
+  aspectRatio                   AB   double       key 524     = 0
+      Aspect ratio value.
+  interpolatorId                     Id           key 591
+      The id of the custom interpolator used when interpolation is Cubic.
+  interpolationTime             AB   double       key 592     = 0
+      The time over which the interpolator applies.
+  flexBasisUnitsValue                uint8        key 705     = auto
+      Flex basis unit value
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  layoutAlignmentType           AB   uint8        key 632     = topLeft
+      accepts: topLeft (0), topCenter (1), topRight (2), centerLeft (3), center (4), centerRight (5), bottomLeft (6), bottomCenter (7), bottomRight (8), spaceBetweenStart (9), spaceBetweenCenter (10), spaceBetweenEnd (11)
+  animationStyleType                 uint8        key 589     = none
+      The type of animation none|custom|inherit applied to this layout.
+      accepts: none (0), inherit (1), custom (2)
+  interpolationType                  uint8        key 590     = hold
+      The type of interpolation index in KeyframeInterpolation applied to this layout.
+      accepts: hold (0), linear (1), cubic (2), elastic (3)
+  positionTypeValue             AB   uint8        key 597     = relative
+      accepts: static (0), relative (1), absolute (2)
+  flexDirectionValue            AB   uint8        key 598     = row
+      Flex dir
+      accepts: column (0), columnReverse (1), row (2), rowReverse (3)
+  directionValue                AB   uint8        key 599     = inherit
+      accepts: inherit (0), ltr (1), rtl (2)
+  flexWrapValue                 AB   uint8        key 604     = noWrap
+      accepts: noWrap (0), wrap (1), wrapReverse (2)
+  overflowValue                 A    uint8        key 605     = visible
+      accepts: visible (0), hidden (1), scroll (2)
+  intrinsicallySizedValue       AB   bool         key 606     = false
+  borderLeftUnitsValue               uint8        key 609     = undefined
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  borderRightUnitsValue              uint8        key 610     = undefined
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  borderTopUnitsValue                uint8        key 611     = undefined
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  borderBottomUnitsValue             uint8        key 612     = undefined
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  marginLeftUnitsValue               uint8        key 613     = points
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  marginRightUnitsValue              uint8        key 614     = points
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  marginTopUnitsValue                uint8        key 615     = points
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  marginBottomUnitsValue             uint8        key 616     = points
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  paddingLeftUnitsValue              uint8        key 617     = points
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  paddingRightUnitsValue             uint8        key 618     = points
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  paddingTopUnitsValue               uint8        key 619     = points
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  paddingBottomUnitsValue            uint8        key 620     = points
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  gapHorizontalUnitsValue            uint8        key 625     = points
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  gapVerticalUnitsValue              uint8        key 626     = points
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  justifyItemsValue             AB   uint8        key 1045    = stretch
+      Default inline-axis alignment of grid items: flex start (0), center (1), flex end (2), space between (3), space around (4), space evenly (5), auto (6), stretch (7), start (8), end (9).
+      accepts: flexStart (0), flex-start (0), center (1), flexEnd (2), flex-end (2), spaceBetween (3), space-between (3), spaceAround (4), space-around (4), spaceEvenly (5), space-evenly (5), auto (6), stretch (7), start (8), end (9)
+  layoutTypeValue                    uint8        key 1059    = flex
+      Layout algorithm for children: flex (0), grid (1), stack (2). Separate from displayValue, which only controls visibility.
+      accepts: flex (0), grid (1), stack (2)
+  linkCornerRadius               B   bool         key 639     = true
+      Whether the TL corner radius defines all the radiuses
+  cornerRadiusTL                AB   double       key 640     = 0
+      Top left radius of the corners of this layout
+  cornerRadiusTR                AB   double       key 641     = 0
+      Top right radius of the corners of this layout
+  cornerRadiusBL                AB   double       key 642     = 0
+      Bottom left radius of the corners of this layout
+  cornerRadiusBR                AB   double       key 643     = 0
+      Bottom right radius of the corners of this layout
+
+inherited from LayoutSizingStyle:
+  minWidth                      AB   double       key 502     = 0
+      Min width of the item.
+  maxWidth                      AB   double       key 500     = 0
+      Max width of the item.
+  minHeight                     AB   double       key 503     = 0
+      Min height of the item.
+  maxHeight                     AB   double       key 501     = 0
+      Max height of the item.
+  minWidthUnitsValue                 uint8        key 627     = undefined
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  maxWidthUnitsValue                 uint8        key 629     = undefined
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  minHeightUnitsValue                uint8        key 628     = undefined
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  maxHeightUnitsValue                uint8        key 630     = undefined
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  layoutWidthScaleType          AB   uint8        key 655     = fixed
+      accepts: fixed (0), fill (1), hug (2)
+  layoutHeightScaleType         AB   uint8        key 656     = fixed
+      accepts: fixed (0), fill (1), hug (2)
+  hugUnbounded                       bool         key 451     = false
+      When true a hugging axis measures its content at max-content instead of clamping to the space available from the nearest definitely sized ancestor (usually the artboard). Min/max sizing still applies.
+  widthUnitsValue                    uint8        key 607     = points
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  heightUnitsValue                   uint8        key 608     = points
+      accepts: undefined (0), points (1), percent (2), auto (3)
+  justifySelfValue              AB   uint8        key 1046    = auto
+      Inline-axis alignment of this item within its grid area; same values as justify items.
+      accepts: flexStart (0), flex-start (0), center (1), flexEnd (2), flex-end (2), spaceBetween (3), space-between (3), spaceAround (4), space-around (4), spaceEvenly (5), space-evenly (5), auto (6), stretch (7), start (8), end (9)
+  displayValue                  AB   uint8        key 596     = flex
+      accepts: flex (0), none (1)
+
+inherited from Component:
+  name                               String       key 4
+      Non-unique identifier, used to give friendly names to elements in the hierarchy. Runtimes provide an API for finding components by this [name].
+  parentId                           Id           key 5
+      Identifier used to track parent ContainerComponent.
+  flags                              uint         key 130     = 0
+      Component state. Runtime export folds visibility and selectable state into drawable flags; editor-only flags stay in the editor.
+      bits (write each as its own attribute, e.g. hidden="true"): hidden locked disconnected opaque guide isolated visibleOverride unlockedOverride participatesInLayout complexDependency selectable
+
+75 properties.  A = animatable, B = bindable, D = derived (computed, not authored -- bind to it, do not set it).
+Editor-only properties are hidden; --all shows them.

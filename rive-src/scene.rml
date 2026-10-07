@@ -1,0 +1,1428 @@
+<Rive version="1" kind="fragment">
+
+  <Artboard
+    width="900"
+    height="900"
+    name="OrbitalCore"
+    defaultStateMachineId="0:100"
+    id="0:1"
+   styleId="0:2">
+
+    <LayoutComponentStyle
+      id="0:2"
+      name="ArtboardStyle"
+    />
+
+
+    <!-- Warm neutral background -->
+    <Fill name="Background">
+      <SolidColor
+        colorValue="FFF1EFE9"
+        name="BackgroundColor"
+      />
+    </Fill>
+
+
+    <!-- =================================================
+         REAR GEOMETRY
+         ================================================= -->
+
+    <Shape
+      x="450"
+      y="450"
+      rotation="-0.35"
+      name="RearShardA"
+      id="0:10"
+    >
+      <Triangle
+        originX="0.5"
+        originY="0.5"
+        width="490"
+        height="470"
+        name="RearPathA"
+      />
+
+      <Fill name="RearFillA">
+        <SolidColor
+          colorValue="FFCAC7BD"
+          name="RearColorA"
+        />
+      </Fill>
+    </Shape>
+
+
+    <Shape
+      x="450"
+      y="450"
+      rotation="0.55"
+      name="RearShardB"
+      id="0:11"
+    >
+      <Triangle
+        originX="0.5"
+        originY="0.5"
+        width="430"
+        height="430"
+        name="RearPathB"
+      />
+
+      <Fill name="RearFillB">
+        <SolidColor
+          colorValue="FF232323"
+          name="RearColorB"
+        />
+      </Fill>
+    </Shape>
+
+
+    <!-- =================================================
+         MID GEOMETRY
+         ================================================= -->
+
+    <Shape
+      x="450"
+      y="450"
+      rotation="-0.05"
+      name="MiddleShard"
+      id="0:12"
+    >
+      <Triangle
+        originX="0.5"
+        originY="0.5"
+        width="335"
+        height="350"
+        name="MiddlePath"
+      />
+
+      <Fill name="MiddleFill">
+        <SolidColor
+          colorValue="FF3563E9"
+          name="MiddleColor"
+        />
+      </Fill>
+    </Shape>
+
+
+    <!-- =================================================
+         FRONT GEOMETRY
+         ================================================= -->
+
+    <Shape
+      x="450"
+      y="450"
+      rotation="0.35"
+      name="FrontShard"
+      id="0:13"
+    >
+      <Triangle
+        originX="0.5"
+        originY="0.5"
+        width="230"
+        height="245"
+        name="FrontPath"
+      />
+
+      <Fill name="FrontFill">
+        <SolidColor
+          colorValue="FFF0AA38"
+          name="FrontColor"
+        />
+      </Fill>
+    </Shape>
+
+
+    <!-- =================================================
+         CENTER
+         ================================================= -->
+
+    <Shape
+      x="450"
+      y="450"
+      rotation="-0.52"
+      name="Core"
+      id="0:14"
+    >
+      <Triangle
+        originX="0.5"
+        originY="0.5"
+        width="120"
+        height="128"
+        name="CorePath"
+      />
+
+      <Fill name="CoreFill">
+        <SolidColor
+          colorValue="FFF6F4ED"
+          name="CoreColor"
+        />
+      </Fill>
+    </Shape>
+
+
+
+    <!-- =================================================
+         STATE MACHINE
+         ================================================= -->
+
+    <StateMachine
+      name="Main"
+      id="0:100"
+    >
+
+      <StateMachineNumber
+        name="pointerX"
+        value="0"
+        id="0:101"
+      />
+
+      <StateMachineNumber
+        name="pointerY"
+        value="0"
+        id="0:102"
+      />
+
+      <StateMachineNumber
+        name="scroll"
+        value="0"
+        id="0:103"
+      />
+
+      <StateMachineBool
+        name="focus"
+        value="false"
+        id="0:104"
+      />
+
+      <StateMachineTrigger
+        name="burst"
+        id="0:105"
+      />
+
+      <StateMachineBool
+        name="reducedMotion"
+        value="false"
+        id="0:106"
+      />
+
+
+      <!-- =============================================
+           POINTER X
+           -1 = pointer left
+            0 = center
+            1 = pointer right
+           ============================================= -->
+
+      <StateMachineLayer
+        name="Pointer X"
+        id="0:120"
+      >
+
+        <AnyState
+          x="100"
+          y="-120"
+        />
+
+        <ExitState
+          x="520"
+          y="-120"
+        />
+
+        <EntryState
+          x="0"
+          y="0"
+        >
+          <StateTransition
+            stateToId="0:121"
+          />
+        </EntryState>
+
+        <BlendState1DInput
+          inputId="0:101"
+          x="260"
+          y="0"
+          id="0:121"
+        >
+
+          <BlendAnimation1D
+            animationId="0:210"
+            value="-1"
+          />
+
+          <BlendAnimation1D
+            animationId="0:211"
+            value="0"
+          />
+
+          <BlendAnimation1D
+            animationId="0:212"
+            value="1"
+          />
+
+        </BlendState1DInput>
+
+      </StateMachineLayer>
+
+
+      <!-- =============================================
+           POINTER Y
+           ============================================= -->
+
+      <StateMachineLayer
+        name="Pointer Y"
+        id="0:130"
+      >
+
+        <AnyState
+          x="100"
+          y="-120"
+        />
+
+        <ExitState
+          x="520"
+          y="-120"
+        />
+
+        <EntryState
+          x="0"
+          y="0"
+        >
+          <StateTransition
+            stateToId="0:131"
+          />
+        </EntryState>
+
+        <BlendState1DInput
+          inputId="0:102"
+          x="260"
+          y="0"
+          id="0:131"
+        >
+
+          <BlendAnimation1D
+            animationId="0:220"
+            value="-1"
+          />
+
+          <BlendAnimation1D
+            animationId="0:221"
+            value="0"
+          />
+
+          <BlendAnimation1D
+            animationId="0:222"
+            value="1"
+          />
+
+        </BlendState1DInput>
+
+      </StateMachineLayer>
+
+
+      <!-- =============================================
+           SCROLL
+           0   = assembled
+           .5  = maximum separation
+           1   = reassembled
+           ============================================= -->
+
+      <StateMachineLayer
+        name="Scroll"
+        id="0:140"
+      >
+
+        <AnyState
+          x="100"
+          y="-120"
+        />
+
+        <ExitState
+          x="520"
+          y="-120"
+        />
+
+        <EntryState
+          x="0"
+          y="0"
+        >
+          <StateTransition
+            stateToId="0:141"
+          />
+        </EntryState>
+
+        <BlendState1DInput
+          inputId="0:103"
+          x="260"
+          y="0"
+          id="0:141"
+        >
+
+          <BlendAnimation1D
+            animationId="0:230"
+            value="0"
+          />
+
+          <BlendAnimation1D
+            animationId="0:231"
+            value="0.5"
+          />
+
+          <BlendAnimation1D
+            animationId="0:232"
+            value="1"
+          />
+
+        </BlendState1DInput>
+
+      </StateMachineLayer>
+
+    </StateMachine>
+
+
+
+    <!-- =================================================
+         IDLE MOTION
+         slow restrained movement
+         ================================================= -->
+
+    <LinearAnimation
+      loopValue="loop"
+      duration="360"
+      fps="60"
+      name="Idle"
+      id="0:200"
+    >
+
+      <KeyedObject objectId="0:10">
+        <KeyedProperty propertyKey="15">
+          <KeyFrameDouble
+            value="-0.35"
+            interpolationType="linear"
+          />
+          <KeyFrameDouble
+            value="0.10"
+            interpolationType="linear"
+            frame="180"
+          />
+          <KeyFrameDouble
+            value="-0.35"
+            interpolationType="linear"
+            frame="360"
+          />
+        </KeyedProperty>
+      </KeyedObject>
+
+
+      <KeyedObject objectId="0:11">
+        <KeyedProperty propertyKey="15">
+          <KeyFrameDouble
+            value="0.55"
+            interpolationType="linear"
+          />
+          <KeyFrameDouble
+            value="0.10"
+            interpolationType="linear"
+            frame="180"
+          />
+          <KeyFrameDouble
+            value="0.55"
+            interpolationType="linear"
+            frame="360"
+          />
+        </KeyedProperty>
+      </KeyedObject>
+
+
+      <KeyedObject objectId="0:13">
+        <KeyedProperty propertyKey="15">
+          <KeyFrameDouble
+            value="0.35"
+            interpolationType="linear"
+          />
+          <KeyFrameDouble
+            value="0.62"
+            interpolationType="linear"
+            frame="180"
+          />
+          <KeyFrameDouble
+            value="0.35"
+            interpolationType="linear"
+            frame="360"
+          />
+        </KeyedProperty>
+      </KeyedObject>
+
+    </LinearAnimation>
+
+
+
+    <!-- =================================================
+         CLICK BURST
+         ================================================= -->
+
+    <LinearAnimation
+      loopValue="oneShot"
+      duration="48"
+      fps="60"
+      name="Burst"
+      id="0:201"
+    >
+
+      <KeyedObject objectId="0:10">
+        <KeyedProperty propertyKey="15">
+
+          <KeyFrameDouble
+            value="-0.35"
+            interpolationType="linear"
+          />
+
+          <KeyFrameDouble
+            value="-1.20"
+            interpolationType="linear"
+            frame="14"
+          />
+
+          <KeyFrameDouble
+            value="0.16"
+            interpolationType="linear"
+            frame="30"
+          />
+
+          <KeyFrameDouble
+            value="-0.35"
+            interpolationType="linear"
+            frame="48"
+          />
+
+        </KeyedProperty>
+      </KeyedObject>
+
+
+      <KeyedObject objectId="0:11">
+        <KeyedProperty propertyKey="15">
+
+          <KeyFrameDouble
+            value="0.55"
+            interpolationType="linear"
+          />
+
+          <KeyFrameDouble
+            value="1.55"
+            interpolationType="linear"
+            frame="14"
+          />
+
+          <KeyFrameDouble
+            value="0.20"
+            interpolationType="linear"
+            frame="30"
+          />
+
+          <KeyFrameDouble
+            value="0.55"
+            interpolationType="linear"
+            frame="48"
+          />
+
+        </KeyedProperty>
+      </KeyedObject>
+
+
+      <KeyedObject objectId="0:12">
+        <KeyedProperty propertyKey="15">
+
+          <KeyFrameDouble
+            value="-0.05"
+            interpolationType="linear"
+          />
+
+          <KeyFrameDouble
+            value="0.65"
+            interpolationType="linear"
+            frame="13"
+          />
+
+          <KeyFrameDouble
+            value="-0.30"
+            interpolationType="linear"
+            frame="29"
+          />
+
+          <KeyFrameDouble
+            value="-0.05"
+            interpolationType="linear"
+            frame="48"
+          />
+
+        </KeyedProperty>
+      </KeyedObject>
+
+    </LinearAnimation>
+
+
+
+    <!-- =================================================
+         FOCUS / INSPECTION MOTION
+         ================================================= -->
+
+    <LinearAnimation
+      loopValue="oneShot"
+      duration="36"
+      fps="60"
+      name="Focus"
+      id="0:202"
+    >
+
+      <KeyedObject objectId="0:12">
+        <KeyedProperty propertyKey="15">
+
+          <KeyFrameDouble
+            value="-0.05"
+            interpolationType="linear"
+          />
+
+          <KeyFrameDouble
+            value="0.25"
+            interpolationType="linear"
+            frame="20"
+          />
+
+          <KeyFrameDouble
+            value="0.12"
+            interpolationType="linear"
+            frame="36"
+          />
+
+        </KeyedProperty>
+      </KeyedObject>
+
+
+      <KeyedObject objectId="0:13">
+        <KeyedProperty propertyKey="15">
+
+          <KeyFrameDouble
+            value="0.35"
+            interpolationType="linear"
+          />
+
+          <KeyFrameDouble
+            value="-0.15"
+            interpolationType="linear"
+            frame="20"
+          />
+
+          <KeyFrameDouble
+            value="0.08"
+            interpolationType="linear"
+            frame="36"
+          />
+
+        </KeyedProperty>
+      </KeyedObject>
+
+    </LinearAnimation>
+
+
+  
+
+    <!-- PHASE3_INTERACTION_ANIMATIONS_START -->
+
+    <LinearAnimation
+      loopValue="oneShot"
+      duration="1"
+      fps="60"
+      name="PointerXLeft"
+      id="0:210"
+    >
+
+      <KeyedObject objectId="0:10">
+
+        <KeyedProperty propertyKey="13">
+          <KeyFrameDouble
+            value="462"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:11">
+
+        <KeyedProperty propertyKey="13">
+          <KeyFrameDouble
+            value="458"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:12">
+
+        <KeyedProperty propertyKey="13">
+          <KeyFrameDouble
+            value="444"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:13">
+
+        <KeyedProperty propertyKey="13">
+          <KeyFrameDouble
+            value="430"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:14">
+
+        <KeyedProperty propertyKey="13">
+          <KeyFrameDouble
+            value="438"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+    </LinearAnimation>
+
+    <LinearAnimation
+      loopValue="oneShot"
+      duration="1"
+      fps="60"
+      name="PointerXCenter"
+      id="0:211"
+    >
+
+      <KeyedObject objectId="0:10">
+
+        <KeyedProperty propertyKey="13">
+          <KeyFrameDouble
+            value="450"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:11">
+
+        <KeyedProperty propertyKey="13">
+          <KeyFrameDouble
+            value="450"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:12">
+
+        <KeyedProperty propertyKey="13">
+          <KeyFrameDouble
+            value="450"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:13">
+
+        <KeyedProperty propertyKey="13">
+          <KeyFrameDouble
+            value="450"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:14">
+
+        <KeyedProperty propertyKey="13">
+          <KeyFrameDouble
+            value="450"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+    </LinearAnimation>
+
+    <LinearAnimation
+      loopValue="oneShot"
+      duration="1"
+      fps="60"
+      name="PointerXRight"
+      id="0:212"
+    >
+
+      <KeyedObject objectId="0:10">
+
+        <KeyedProperty propertyKey="13">
+          <KeyFrameDouble
+            value="438"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:11">
+
+        <KeyedProperty propertyKey="13">
+          <KeyFrameDouble
+            value="442"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:12">
+
+        <KeyedProperty propertyKey="13">
+          <KeyFrameDouble
+            value="456"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:13">
+
+        <KeyedProperty propertyKey="13">
+          <KeyFrameDouble
+            value="470"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:14">
+
+        <KeyedProperty propertyKey="13">
+          <KeyFrameDouble
+            value="462"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+    </LinearAnimation>
+
+    <LinearAnimation
+      loopValue="oneShot"
+      duration="1"
+      fps="60"
+      name="PointerYUp"
+      id="0:220"
+    >
+
+      <KeyedObject objectId="0:10">
+
+        <KeyedProperty propertyKey="14">
+          <KeyFrameDouble
+            value="458"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:11">
+
+        <KeyedProperty propertyKey="14">
+          <KeyFrameDouble
+            value="456"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:12">
+
+        <KeyedProperty propertyKey="14">
+          <KeyFrameDouble
+            value="445"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:13">
+
+        <KeyedProperty propertyKey="14">
+          <KeyFrameDouble
+            value="432"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:14">
+
+        <KeyedProperty propertyKey="14">
+          <KeyFrameDouble
+            value="440"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+    </LinearAnimation>
+
+    <LinearAnimation
+      loopValue="oneShot"
+      duration="1"
+      fps="60"
+      name="PointerYCenter"
+      id="0:221"
+    >
+
+      <KeyedObject objectId="0:10">
+
+        <KeyedProperty propertyKey="14">
+          <KeyFrameDouble
+            value="450"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:11">
+
+        <KeyedProperty propertyKey="14">
+          <KeyFrameDouble
+            value="450"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:12">
+
+        <KeyedProperty propertyKey="14">
+          <KeyFrameDouble
+            value="450"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:13">
+
+        <KeyedProperty propertyKey="14">
+          <KeyFrameDouble
+            value="450"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:14">
+
+        <KeyedProperty propertyKey="14">
+          <KeyFrameDouble
+            value="450"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+    </LinearAnimation>
+
+    <LinearAnimation
+      loopValue="oneShot"
+      duration="1"
+      fps="60"
+      name="PointerYDown"
+      id="0:222"
+    >
+
+      <KeyedObject objectId="0:10">
+
+        <KeyedProperty propertyKey="14">
+          <KeyFrameDouble
+            value="442"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:11">
+
+        <KeyedProperty propertyKey="14">
+          <KeyFrameDouble
+            value="444"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:12">
+
+        <KeyedProperty propertyKey="14">
+          <KeyFrameDouble
+            value="455"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:13">
+
+        <KeyedProperty propertyKey="14">
+          <KeyFrameDouble
+            value="468"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:14">
+
+        <KeyedProperty propertyKey="14">
+          <KeyFrameDouble
+            value="460"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+    </LinearAnimation>
+
+    <LinearAnimation
+      loopValue="oneShot"
+      duration="1"
+      fps="60"
+      name="ScrollStart"
+      id="0:230"
+    >
+
+      <KeyedObject objectId="0:10">
+
+        <KeyedProperty propertyKey="15">
+          <KeyFrameDouble
+            value="-0.35"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="16">
+          <KeyFrameDouble
+            value="1"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="17">
+          <KeyFrameDouble
+            value="1"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:11">
+
+        <KeyedProperty propertyKey="15">
+          <KeyFrameDouble
+            value="0.55"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="16">
+          <KeyFrameDouble
+            value="1"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="17">
+          <KeyFrameDouble
+            value="1"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:12">
+
+        <KeyedProperty propertyKey="15">
+          <KeyFrameDouble
+            value="-0.05"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="16">
+          <KeyFrameDouble
+            value="1"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="17">
+          <KeyFrameDouble
+            value="1"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:13">
+
+        <KeyedProperty propertyKey="15">
+          <KeyFrameDouble
+            value="0.35"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="16">
+          <KeyFrameDouble
+            value="1"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="17">
+          <KeyFrameDouble
+            value="1"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:14">
+
+        <KeyedProperty propertyKey="15">
+          <KeyFrameDouble
+            value="-0.52"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="16">
+          <KeyFrameDouble
+            value="1"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="17">
+          <KeyFrameDouble
+            value="1"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+    </LinearAnimation>
+
+    <LinearAnimation
+      loopValue="oneShot"
+      duration="1"
+      fps="60"
+      name="ScrollMiddle"
+      id="0:231"
+    >
+
+      <KeyedObject objectId="0:10">
+
+        <KeyedProperty propertyKey="15">
+          <KeyFrameDouble
+            value="-1.05"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="16">
+          <KeyFrameDouble
+            value="1.06"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="17">
+          <KeyFrameDouble
+            value="1.06"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:11">
+
+        <KeyedProperty propertyKey="15">
+          <KeyFrameDouble
+            value="1.25"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="16">
+          <KeyFrameDouble
+            value="1.04"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="17">
+          <KeyFrameDouble
+            value="1.04"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:12">
+
+        <KeyedProperty propertyKey="15">
+          <KeyFrameDouble
+            value="-0.42"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="16">
+          <KeyFrameDouble
+            value="1.08"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="17">
+          <KeyFrameDouble
+            value="1.08"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:13">
+
+        <KeyedProperty propertyKey="15">
+          <KeyFrameDouble
+            value="0.96"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="16">
+          <KeyFrameDouble
+            value="1.12"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="17">
+          <KeyFrameDouble
+            value="1.12"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:14">
+
+        <KeyedProperty propertyKey="15">
+          <KeyFrameDouble
+            value="-1.2"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="16">
+          <KeyFrameDouble
+            value="0.92"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="17">
+          <KeyFrameDouble
+            value="0.92"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+    </LinearAnimation>
+
+    <LinearAnimation
+      loopValue="oneShot"
+      duration="1"
+      fps="60"
+      name="ScrollEnd"
+      id="0:232"
+    >
+
+      <KeyedObject objectId="0:10">
+
+        <KeyedProperty propertyKey="15">
+          <KeyFrameDouble
+            value="-0.35"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="16">
+          <KeyFrameDouble
+            value="1"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="17">
+          <KeyFrameDouble
+            value="1"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:11">
+
+        <KeyedProperty propertyKey="15">
+          <KeyFrameDouble
+            value="0.55"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="16">
+          <KeyFrameDouble
+            value="1"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="17">
+          <KeyFrameDouble
+            value="1"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:12">
+
+        <KeyedProperty propertyKey="15">
+          <KeyFrameDouble
+            value="-0.05"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="16">
+          <KeyFrameDouble
+            value="1"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="17">
+          <KeyFrameDouble
+            value="1"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:13">
+
+        <KeyedProperty propertyKey="15">
+          <KeyFrameDouble
+            value="0.35"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="16">
+          <KeyFrameDouble
+            value="1"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="17">
+          <KeyFrameDouble
+            value="1"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+      <KeyedObject objectId="0:14">
+
+        <KeyedProperty propertyKey="15">
+          <KeyFrameDouble
+            value="-0.52"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="16">
+          <KeyFrameDouble
+            value="1"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+        <KeyedProperty propertyKey="17">
+          <KeyFrameDouble
+            value="1"
+            interpolationType="linear"
+          />
+        </KeyedProperty>
+
+      </KeyedObject>
+
+    </LinearAnimation>
+
+    <!-- PHASE3_INTERACTION_ANIMATIONS_END -->
+
+</Artboard>
+
+</Rive>
